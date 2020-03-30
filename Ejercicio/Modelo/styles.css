@@ -1,0 +1,53 @@
+/* Header */
+header {
+  position: relative;
+  max-width: 1120px;
+  text-align: center;
+  margin: auto;
+}
+#header-redes,
+#header-logo,
+#header-buscador {
+  display: inline-block;
+}
+#header-redes {
+  position: absolute;
+  left: 0;
+  top: 13px;
+}
+#header-buscador {
+  position: absolute;
+  right: 0;
+  top: 15px;
+}
+/* Finaliza Header */
+
+/* Menú */
+nav {
+  background-color: #4e9525;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+nav div {
+  display: inline-block;
+  width: 90px;
+}
+nav div {
+  display: inline-block;
+  width: 90px;
+}
+nav > div > a {
+  text-decoration: none;
+  color: white;
+}
+nav > div > a:hover {
+  text-decoration: underline;
+}
+/* Finaliza Menú */
+
+/* Gallery */
+#galeria > img {
+  width: 100%;
+}
+/* Finaliza Gallery */
