@@ -1,0 +1,234 @@
+/* General */
+.divider {
+  height:25px;
+}
+/* Finaliza General */
+
+/* Header */
+header {
+  position: relative;
+  max-width: 1120px;
+  text-align: center;
+  margin: auto;
+}
+#header-redes,
+#header-logo,
+#header-buscador {
+  display: inline-block;
+}
+#header-redes {
+  position: absolute;
+  left: 0;
+  top: 13px;
+}
+#header-redes > img {
+  margin: 0 3px;
+  cursor: pointer;
+}
+#header-buscador {
+  position: absolute;
+  right: 0;
+  top: 15px;
+}
+#header-buscador-texto {
+  border-radius: 3px;
+  border-style: solid;
+  border-width: thin;
+  height: 18px;
+  border-color:#67717d
+}
+#header-buscador-submit {
+  background: #4e9525;
+  color: white;
+  border-style: solid;
+  border-color: #4e9525;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#header-buscador-submit:focus {
+  outline: none;
+}
+/* Finaliza Header */
+
+/* Menú */
+nav {
+  background-color: #4e9525;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+nav div {
+  display: inline-block;
+  width: 90px;
+}
+nav div {
+  display: inline-block;
+  width: 90px;
+}
+nav > div > a {
+  text-decoration: none;
+  color: white;
+}
+nav > div > a:hover {
+  text-decoration: underline;
+}
+/* Finaliza Menú */
+
+/* Gallery */
+#galeria > img {
+  width: 100%;
+}
+/* Finaliza Gallery */
+
+/* Services */
+#servicios {
+  position: relative;
+  max-width: 1120px;
+  text-align: center;
+  margin: auto;
+}
+#servicios > article {
+  display: inline-block;
+  max-width: 250px;
+  height: 225px;
+  border-style: solid;
+  border-width: thin;
+  padding: 15px;
+  vertical-align: middle;
+  border-radius: 3px;
+}
+#servicios > article:hover {
+  background-color: #4e9525;
+  color: white;
+  cursor: pointer;
+}
+/* Finaliza Services */
+
+/* Experiencias */
+#experiencias {
+  background-color: #f8f9fa;
+}
+#experiencias-container {
+  position: relative;
+  max-width: 1120px;
+  text-align: center;
+  margin: auto;
+}
+#experiencias-imagen {
+  
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 450px;
+}
+#experiencias-imagen > img {
+  width: 100%;
+}
+#experiencias-text {
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 350px;
+  padding: 0 50px;
+}
+#experiencias-text > div {
+  background-color: white;
+  border-style: solid;
+  border-width: thin;
+  padding: 15px;
+  margin-bottom: 15px;
+  position: relative;
+  border-radius: 3px;
+}
+#experiencias-text > div:hover {
+  color: white;
+  background-color: #4e9525;
+}
+#experiencias-text > div > div {
+  text-align: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-block;
+  border-style: solid;
+  border-width: thin;
+  border-color: white;
+  background-color: #4e9525;
+  color: white;
+  cursor: pointer;
+  width: 50px;
+  height: 29px;
+  border-radius: 3px;
+}
+#experiencias-text > div > div::after {
+  content: "...";
+}
+/* Finaliza Experiencias */
+
+/* Contacto */
+#contacto {
+  background-color: #4e9525;
+  color: white;
+}
+#contacto-container {
+  position: relative;
+  max-width: 1120px;
+  text-align: center;
+  margin: auto;
+}
+#contacto-container > div {
+  vertical-align: middle;
+  display: inline-block;
+}
+#contacto-container > div:nth-child(1) {
+  text-align: left;
+  width: 550px;
+}
+/* Finaliza contacto */
+
+/* Testimonios */
+#testimonios {
+  position: relative;
+  max-width: 1120px;
+  text-align: center;
+  margin: auto;
+}
+#testimonios > article {
+  display: inline-block;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 3px;
+  max-width: 250px;
+  height: 180px;
+  padding: 15px;
+  vertical-align: middle;
+  text-align: left;
+}
+#testimonios > article > p {
+  font-style: italic;
+}
+.testimonio > img,
+.testimonio > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+.testimonio > img {
+  width: 70px;
+  border-radius: 34px;
+}
+.testimonio > div > h3 {
+  margin-top: 0px;
+  margin-bottom: 6px;
+}
+.testimonio > div > span {
+  color: #4e9525;
+}
+/* Finaliza Testimonios */
+
+/* Footer */
+#footer {
+  background-color: #252525;
+  color: white;
+  text-align: center;
+  padding: 10px 0px;
+}
+/* Finaliza Footer */
