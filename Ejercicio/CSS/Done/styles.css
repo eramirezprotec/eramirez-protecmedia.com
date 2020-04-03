@@ -57,11 +57,7 @@ nav {
   padding-bottom: 20px;
   text-align: center;
 }
-nav div {
-  display: inline-block;
-  width: 90px;
-}
-nav div {
+nav > div {
   display: inline-block;
   width: 90px;
 }
@@ -115,7 +111,6 @@ nav > div > a:hover {
   margin: auto;
 }
 #experiencias-imagen {
-  
   display: inline-block;
   vertical-align: middle;
   max-width: 450px;
@@ -225,7 +220,7 @@ nav > div > a:hover {
 /* Finaliza Testimonios */
 
 /* Footer */
-#footer {
+footer {
   background-color: #252525;
   color: white;
   text-align: center;
