@@ -37,7 +37,7 @@ for (let i = 0; i < servicios.length; i++) {
   html += '<img src="images/servicios/' + servicios[i].imagen + '" width="50" height="50">';
   html += '<h3>' + servicios[i].titulo + '</h3>';
   html += '<p>' + servicios[i].texto + '</p>';
-  html += '</article> '
+  html += '</article> ';
 }
 elementoServicios.innerHTML = html;
 /* Finaliza Servicios */
