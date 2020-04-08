@@ -43,3 +43,50 @@ elementoQuintaPregunta.innerHTML += '<br><br><b>Incrementamos</b> el contador: '
 elementoQuintaPregunta.innerHTML += '<br><br><b>Incrementamos</b> el contador: ' + funcionContador.incrementar();
 elementoQuintaPregunta.innerHTML += '<br><br><b>Consultamos</b> el valor del contador: ' + funcionContador.obtener();
 /* Finaliza quinta pregunta */
+
+/* Sexta pregunta */
+var formPromesa = document.getElementById('form-promesa');
+formPromesa.addEventListener('submit', realizarPeticion);
+
+function realizarPeticion(evento) {
+	event.preventDefault();
+	
+	var tiempoMaximo = document.getElementById('tiempo').value;
+	
+	var tiempoTranscurrido = 0;
+	
+	var promesa = new Promise((exito, fracaso) => {
+		if (tiempoTranscurrido >= tiempoMaximo) {
+			fracaso('Se ha excedido el tiempo');
+		}
+		var intervalo = setInterval(() => {
+			if (tiempoTranscurrido > tiempoMaximo) {
+				fracaso('Se ha excedido el tiempo');
+				clearInterval(intervalo);
+			}
+			tiempoTranscurrido += 1;
+		}, 1);
+		
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				clearInterval(intervalo);
+				exito(this.responseText);
+			} else {
+				if (this.readyState == 4) {
+					clearInterval(intervalo);
+					fracaso(this.responseText);
+				}
+			}
+		};
+		xhttp.open("GET", "https://jsonplaceholder.typicode.com/todos/1", true);
+		xhttp.send();
+	});
+	
+	promesa.then((data) => {
+		document.getElementById('respuesta-promesa').innerHTML = data;
+	}).catch((error) => {
+		document.getElementById('respuesta-promesa').innerHTML = error;
+	});
+}
+/* Finaliza sexta pregunta */
