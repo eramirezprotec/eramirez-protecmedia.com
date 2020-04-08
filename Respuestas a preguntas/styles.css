@@ -1,0 +1,38 @@
+body {
+	padding: 25px;
+}
+
+/* General */
+body > div {
+	display: inline-block;
+	width: 33%;
+	vertical-align: bottom;
+}
+
+body > div > h3 {
+	width: 85%;
+	text-align: justify;
+}
+
+body > div > div {
+	width: 350px;
+	height:200px;
+	background: #eee;
+	border: solid thick red;
+	padding: 25px;
+	margin:10px;
+	overflow: auto;
+}
+/* Finaliza General */
+
+/* Primera pregunta */
+#primera_pregunta > div {
+	/* overflow: unset; */
+}
+/* Finaliza primera pregunta */
+
+/* Tercera pregunta */
+#tercera_pregunta > div > a > img {
+	width: 100%;
+}
+/* Finaliza tercera pregunta */
