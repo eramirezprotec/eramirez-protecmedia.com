@@ -10,21 +10,30 @@ import { MessageService } from '../message.service';
   styleUrls: ['./heroes.component.scss']
 })
 export class HeroesComponent implements OnInit {
-  heroes: Observable<Hero[]>;
-  selectedHero: Hero;
+  heroes: Hero[];
 
   constructor(
-    private heroService: HeroService,
-    private messageService: MessageService
+    private heroService: HeroService
   ) { }
 
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-    this.messageService.add('HeroService: Selected hero id=' + hero.id);
+  getHeroes(): void {
+    this.heroService.getHeroes().subscribe(data => {
+      this.heroes = data;
+    });
   }
 
-  getHeroes(): void {
-    this.heroes = this.heroService.getHeroes();
+  add(name: string): void {
+    name = name.trim();
+    if (!name) { return; }
+    this.heroService.addHero({ name } as Hero)
+      .subscribe((hero : Hero) => {
+        this.heroes.push(hero);
+      });
+  }
+
+  delete(hero: Hero): void {
+    this.heroes = this.heroes.filter(h => h !== hero);
+    this.heroService.deleteHero(hero).subscribe();
   }
 
   ngOnInit(): void {
