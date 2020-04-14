@@ -1,0 +1,21 @@
+0 - VSC: https://code.visualstudio.com/
+
+1 - Instalar node: https://nodejs.org/en/download/
+    Comprobar versión: node -v
+    ¿Por qué?
+	https://www.quora.com/Why-does-Angular-2-need-Node-js
+	https://stackoverflow.com/questions/37267510/why-do-we-have-install-node-js-for-angular-2-0
+	
+2 - npm package manager
+    Comprobar versión: npm -v
+    ¿Por qué?
+	https://nodejs.org/en/knowledge/getting-started/npm/what-is-npm/
+
+3 - SASS (SCSS): https://sass-lang.com/guide
+
+4 - File structure: https://angular.io/guide/file-structure
+
+5 - TSLint: https://palantir.github.io/tslint/
+
+6 - VSC Workspace: https://stackoverflow.com/questions/44629890/what-is-a-workspace-in-visual-studio-code
+    
