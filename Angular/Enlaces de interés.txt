@@ -1,0 +1,75 @@
+-----------------Entorno Angular---------------------
+
+0 - VSC: https://code.visualstudio.com/
+
+1 - Instalar node: https://nodejs.org/en/download/
+    Comprobar versión: node -v
+    ¿Por qué node?
+	https://www.quora.com/Why-does-Angular-2-need-Node-js
+	https://stackoverflow.com/questions/37267510/why-do-we-have-install-node-js-for-angular-2-0
+	
+2 - npm package manager
+    Comprobar versión: npm -v
+    ¿Por qué npm?
+	https://nodejs.org/en/knowledge/getting-started/npm/what-is-npm/
+
+3 - SASS (SCSS): https://sass-lang.com/guide
+
+4 - File structure: https://angular.io/guide/file-structure
+
+5 - TSLint: https://palantir.github.io/tslint/
+
+6 - VSC Workspace: https://stackoverflow.com/questions/44629890/what-is-a-workspace-in-visual-studio-code
+
+
+-----------------Angular Material---------------------
+
+- Site: https://material.angular.io/
+
+- Getting started: https://material.angular.io/guide/getting-started
+
+- Guides: https://material.angular.io/guides
+
+
+-----------------Métodos de interés (JS)---------------------
+
+- filter: https://www.w3schools.com/jsref/jsref_filter.asp
+
+- find: https://www.w3schools.com/jsref/jsref_find.asp
+
+- JSON.stringify: https://www.w3schools.com/js/js_json_stringify.asp
+
+- JSON.parse: https://www.w3schools.com/js/js_json_parse.asp
+
+- slice: https://www.w3schools.com/jsref/jsref_slice_array.asp
+
+
+-----------------RxJS (Reactive Extensions for JavaScript)---------------------
+
+- Introducción: https://www.learnrxjs.io/learn-rxjs/concepts/rxjs-primer
+
+- Learn RxJS: https://www.learnrxjs.io/
+
+- map and pipe: https://indepth.dev/reading-the-rxjs-6-sources-map-and-pipe/
+
+- map: https://www.pluralsight.com/guides/transforming-responses-using-map-operator-angular
+
+
+-----------------Angular---------------------
+
+- Cheatsheet: https://angular.io/guide/cheatsheet
+
+- Style guide: https://angular.io/guide/styleguide
+    Shared module: https://angular.io/guide/styleguide#shared-feature-module
+
+- Glossary: https://angular.io/guide/glossary
+
+- Lifecycle hooks: https://angular.io/guide/lifecycle-hooks
+
+-----------------Typescript---------------------
+
+- Sitio: https://www.typescriptlang.org/
+
+- Documentación: https://www.typescriptlang.org/docs/home.html
+
+- Generics: https://www.typescriptlang.org/docs/handbook/generics.html
